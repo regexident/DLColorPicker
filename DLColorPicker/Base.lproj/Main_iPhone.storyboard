@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Gradient Color Picker Controller - First-->
+        <scene sceneID="W3I-pn-N6e">
+            <objects>
+                <viewController title="First" id="CZ4-MO-1fc" customClass="DLCPGradientColorPickerController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jqv-AC-FNM"/>
+                        <viewControllerLayoutGuide type="bottom" id="rVg-UI-LVj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2VE-Yg-loa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5tt-tf-JMv">
+                                <rect key="frame" x="-10" y="67" width="340" height="434"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UeI-dk-McB" customClass="DLCPHexPicker">
+                                        <rect key="frame" x="175" y="20" width="115" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yIm-cI-cZe" customClass="DLCPHexPicker">
+                                        <rect key="frame" x="50" y="20" width="115" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="97M-gC-OZX" customClass="DLCPAlphaPicker">
+                                        <rect key="frame" x="20" y="362" width="300" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="TMh-X5-cmg"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="28h-Kv-UE3" customClass="DLCPSaturationBrightnessPicker">
+                                        <rect key="frame" x="20" y="68" width="300" height="230"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="COZ-hT-n83" customClass="DLCPHuePicker">
+                                        <rect key="frame" x="20" y="306" width="300" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="HbI-1d-7Za"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="0dc-IB-yop"/>
+                                    <constraint firstAttribute="height" constant="434" id="e6X-YQ-qXM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="5tt-tf-JMv" secondAttribute="centerY" id="GVL-ev-bg3"/>
+                            <constraint firstAttribute="centerX" secondItem="5tt-tf-JMv" secondAttribute="centerX" id="WJd-7V-3mm"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Gradient Picker" image="first" id="u1e-5L-l1D"/>
+                    <connections>
+                        <outlet property="afterPicker" destination="UeI-dk-McB" id="n1k-G4-a6u"/>
+                        <outlet property="alphaPicker" destination="97M-gC-OZX" id="N6P-nA-ZIs"/>
+                        <outlet property="beforePicker" destination="yIm-cI-cZe" id="Uds-ju-lGI"/>
+                        <outlet property="huePicker" destination="COZ-hT-n83" id="kqu-zq-euj"/>
+                        <outlet property="saturationBrightnessPicker" destination="28h-Kv-UE3" id="D0n-qN-Cku"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="-166"/>
+        </scene>
+        <!--Waterfall Color Picker Controller - Second-->
+        <scene sceneID="ot8-2e-RuS">
+            <objects>
+                <viewController title="Second" id="QUy-BD-bpt" customClass="DLCPWaterfallColorPickerController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yGd-mn-5ur"/>
+                        <viewControllerLayoutGuide type="bottom" id="WLm-g1-OQp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gMD-aP-Fq6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqh-pd-NEV">
+                                <rect key="frame" x="-10" y="67" width="340" height="434"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pr6-Ml-TQX" customClass="DLCPHexPicker">
+                                        <rect key="frame" x="175" y="20" width="115" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2tZ-DH-jdf" customClass="DLCPHexPicker">
+                                        <rect key="frame" x="50" y="20" width="115" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Vl-Qn-3jk" customClass="DLCPBrightnessPicker">
+                                        <rect key="frame" x="20" y="306" width="300" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="wuu-1e-BLx"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eUS-Oa-UUx" customClass="DLCPHueSaturationPicker">
+                                        <rect key="frame" x="20" y="68" width="300" height="230"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NLO-zc-MAD" customClass="DLCPAlphaPicker">
+                                        <rect key="frame" x="20" y="362" width="300" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="dhs-RR-hQe"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="6y0-Fa-GPO"/>
+                                    <constraint firstAttribute="height" constant="434" id="SfH-aW-Xza"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="aqh-pd-NEV" secondAttribute="centerX" id="iyj-Rv-xZ5"/>
+                            <constraint firstAttribute="centerY" secondItem="aqh-pd-NEV" secondAttribute="centerY" id="sxs-ew-KaN"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Waterfall Picker" image="second" id="Z7h-1E-pvt"/>
+                    <connections>
+                        <outlet property="afterPicker" destination="pr6-Ml-TQX" id="SDD-HB-rli"/>
+                        <outlet property="alphaPicker" destination="NLO-zc-MAD" id="A6n-Uc-cIc"/>
+                        <outlet property="beforePicker" destination="2tZ-DH-jdf" id="a20-x1-Fma"/>
+                        <outlet property="brightnessPicker" destination="3Vl-Qn-3jk" id="38x-w5-Y9R"/>
+                        <outlet property="hueSaturationPicker" destination="eUS-Oa-UUx" id="jL7-0F-Eaq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="498"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Vex-rW-GRa">
+            <objects>
+                <tabBarController id="8YX-ce-x5E" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="JQR-rB-NYL">
+                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="CZ4-MO-1fc" kind="relationship" relationship="viewControllers" id="SUk-Ux-ee1"/>
+                        <segue destination="QUy-BD-bpt" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="180"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
