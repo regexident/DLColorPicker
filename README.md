@@ -1,8 +1,18 @@
-# DLColorPicker
+# DLColorPicker [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
 **DLColorPicker** is both, a loose collection of **UIControls**…
-* `DLCPHexPicker`* `DLCPHuePicker`* `DLCPBrightnessPicker`* `DLCPAlphaPicker`* `DLCPSaturationBrightnessPicker`* `DLCPHueSaturationPicker`
-…and a pair of pre-configured **UIViewControllers**:* `DLCPGradientColorPickerController` (as seen on the left in the preview)* `DLCPWaterfallColorPickerController` (as seen on the right in the preview)
+
+* `DLCPHexPicker`
+* `DLCPHuePicker`
+* `DLCPBrightnessPicker`
+* `DLCPAlphaPicker`
+* `DLCPSaturationBrightnessPicker`
+* `DLCPHueSaturationPicker`
+
+…and a pair of pre-configured **UIViewControllers**:
+
+* `DLCPGradientColorPickerController` (as seen on the left in the preview)
+* `DLCPWaterfallColorPickerController` (as seen on the right in the preview)
 
 While the picker controls work best when used with one of the above **UIViewControllers**,  
 each control can be used on its very own. Don't want a hex picker?
